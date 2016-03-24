@@ -51,7 +51,9 @@ public class MessageResource {
 	@POST
 	public Message addMessage(Message message)
 	{
-		return ms.addMessage(message);
+		System.out.println("Came inside addMessage");
+		ms.addMessage(message);
+		return message;
 	}
 	
 	@Path("{messageId}")
